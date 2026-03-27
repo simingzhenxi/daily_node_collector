@@ -21,10 +21,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 chardet
+        run: pip install requests beautifulsoup4 chardet pyyaml
 
       - name: Run collector
-        run: python daily_node_collector.py || echo "script failed"
+        run: python daily_node_collector.py
 
       - name: Commit and push results
         run: |
