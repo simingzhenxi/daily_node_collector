@@ -8,6 +8,8 @@ on:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     permissions:
       contents: write   # ⭐ 必须加
 
@@ -32,8 +34,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           mkdir -p collected_nodes   # 防止目录不存在
-
-          git add .
+          git add .github/workflows/daily_collect.yml
+          git add README.md
+          git add daily_node_collector.py
+          git add collected_nodes/
 
           if git diff --cached --quiet; then
             echo "No changes"

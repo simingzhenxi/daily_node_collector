@@ -14,7 +14,7 @@ import copy
 import chardet
 import yaml
 from bs4 import BeautifulSoup
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urljoin
 
 # Config
 OUTPUT_DIR = "./collected_nodes/"
@@ -743,6 +743,99 @@ def collect_from_datiya():
     return None
 
 
+def collect_from_yoyapai():
+    """Collect nodes from yoyapai.com free node posts."""
+    print("\n=== Collecting from yoyapai.com ===")
+    collected = 0
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+
+        category_url = "https://yoyapai.com/category/mianfeijiedian"
+        response = requests.get(category_url, headers=headers, timeout=60)
+        response.raise_for_status()
+        print(f"  Fetched category page: {category_url}")
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+        article_url = None
+        seen_links = set()
+
+        for link in soup.find_all('a', href=True):
+            href = urljoin(category_url, link['href'])
+            if href in seen_links:
+                continue
+            seen_links.add(href)
+
+            if re.fullmatch(r'https://yoyapai\.com/\d+/?', href):
+                article_url = href.rstrip('/')
+                break
+
+        if not article_url:
+            article_match = re.search(r'https://yoyapai\.com/\d+/?', response.text)
+            if article_match:
+                article_url = article_match.group().rstrip('/')
+
+        if not article_url:
+            print("  No latest article found")
+            return collected
+
+        print(f"  Found latest article: {article_url}")
+
+        article_response = requests.get(article_url, headers=headers, timeout=60)
+        article_response.raise_for_status()
+        article_text = get_response_text(article_response)
+        article_soup = BeautifulSoup(article_text, 'html.parser')
+
+        patterns = [
+            r'https?://(?:freenode\.)?yoyapai\.com/[^\s"\'<>]+\.ya?ml',
+            r'https?://[^\s"\'<>]*yoyapai[^\s"\'<>]*\.ya?ml',
+        ]
+        sub_url = None
+
+        for pattern in patterns:
+            match = re.search(pattern, article_text)
+            if match:
+                sub_url = match.group()
+                break
+
+        if not sub_url:
+            for element in article_soup.find_all(['a', 'p', 'div', 'span', 'code']):
+                candidate = ''
+                if element.name == 'a' and element.get('href'):
+                    candidate = urljoin(article_url, element['href'])
+                if not candidate and element.text:
+                    candidate = element.text.strip()
+
+                if not candidate:
+                    continue
+
+                for pattern in patterns:
+                    match = re.search(pattern, candidate)
+                    if match:
+                        sub_url = match.group()
+                        break
+                if sub_url:
+                    break
+
+        if sub_url:
+            print(f"  Subscription URL: {sub_url}")
+            nodes = process_subscription(sub_url, 'yoyapai.com')
+            if nodes:
+                all_nodes.extend(nodes)
+                collected = len(nodes)
+                for node in nodes:
+                    node_sources[node] = sub_url
+                print(f"  yoyapai.com: collected {collected} nodes")
+            else:
+                print("  No nodes found in subscription")
+        else:
+            print("  No subscription URL found")
+    except Exception as e:
+        print(f"  yoyapai.com error: {e}")
+    return collected
+
+
 def deduplicate_nodes():
     """Remove duplicate nodes."""
     global all_nodes
@@ -782,6 +875,7 @@ def main():
     collect_from_proxyqueen()
     collect_from_clashfreenode()
     datiya_file = collect_from_datiya()
+    collect_from_yoyapai()
 
     deduplicate_nodes()
     final_file = save_nodes()

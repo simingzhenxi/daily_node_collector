@@ -6,4 +6,4 @@
 - [proxyqueen.top](https://www.proxyqueen.top)
 - [clashfreenode.com](https://clashfreenode.com)
 - [free.datiya.com](https://free.datiya.com)
-
+- [yoyapai.com](https://yoyapai.com/category/mianfeijiedian)
