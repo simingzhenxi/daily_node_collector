@@ -285,3 +285,15 @@ proxies:
   - {name: 🇺🇸 美国, server: 160.16.124.17, port: 4019, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
   - {name: 🇺🇸 美国2, server: 95.40.58.97, port: 4019, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
   - {name: 🇺🇸 美国3, server: 54.46.121.89, port: 17871, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港3, server: 3.112.254.212, port: 52687, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇭🇰 香港4, server: 43.206.194.205, port: 54708, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5, server: 43.199.32.10, port: 50612, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本, server: 54.249.58.71, port: 3278, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2, server: 54.249.58.71, port: 2001, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3, server: 43.199.32.10, port: 4380, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡, server: 54.249.58.71, port: 5594, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2, server: 54.249.58.71, port: 32876, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3, server: 43.199.253.7, port: 30726, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国, server: 13.231.43.53, port: 4019, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国2, server: 43.199.32.10, port: 3057, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国3, server: 52.195.168.226, port: 14919, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
