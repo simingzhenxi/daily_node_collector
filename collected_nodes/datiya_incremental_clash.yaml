@@ -394,3 +394,14 @@ proxies:
   - {name: 🇸🇬 新加坡3, server: 43.199.41.19, port: 4203, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
   - {name: 🇺🇸 美国2, server: 54.250.182.223, port: 4019, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: false}
   - {name: 🇺🇸 美国3, server: 43.199.67.7, port: 23255, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港3, server: 18.163.28.173, port: 53018, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5, server: 13.231.158.129, port: 63131, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本, server: bb.bejkn.cn, port: 6463, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2, server: 16.163.148.1, port: 11541, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇯🇵 日本3, server: 16.163.148.1, port: 8066, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡, server: 16.163.148.1, port: 4840, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡2, server: 13.231.182.84, port: 2511, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡3, server: 13.231.251.168, port: 2074, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国, server: 13.158.137.151, port: 52249, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇺🇸 美国2, server: 16.163.148.1, port: 4019, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇺🇸 美国3, server: 54.64.8.213, port: 38692, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
