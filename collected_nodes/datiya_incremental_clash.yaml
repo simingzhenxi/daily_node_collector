@@ -696,3 +696,14 @@ proxies:
   - {name: 🇺🇸 美国, server: 18.167.173.1, port: 5224, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
   - {name: 🇺🇸 美国2, server: 18.167.173.1, port: 6604, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
   - {name: 🇺🇸 美国3, server: 18.166.154.20, port: 22057, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港3, server: 43.198.226.205, port: 53018, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5, server: 52.196.69.56, port: 4327, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本, server: 18.176.57.129, port: 4099, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2, server: 18.167.42.231, port: 5701, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇯🇵 日本3, server: 43.198.226.205, port: 37973, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡, server: 95.40.35.52, port: 12143, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡2, server: 18.167.42.231, port: 6357, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡3, server: 16.163.138.24, port: 41421, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国, server: 95.40.35.52, port: 6604, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇺🇸 美国2, server: 18.167.42.231, port: 17005, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇺🇸 美国3, server: 95.40.40.218, port: 44265, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
