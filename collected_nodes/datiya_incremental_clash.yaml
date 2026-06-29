@@ -925,3 +925,8 @@ proxies:
   - {name: 🇸🇬 新加坡3, server: 18.162.53.161, port: 9149, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
   - {name: 🇺🇸 美国2, server: 54.46.30.217, port: 49277, type: trojan, password: 230012981ba34c12fec11deca0379005, sni: www.nintendogames.net, skip-cert-verify: true}
   - {name: 🇺🇸 美国3, server: 54.46.109.132, port: 22657, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港4, server: 18.166.29.105, port: 3941, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5, server: 18.163.56.230, port: 3941, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本, server: 18.183.83.131, port: 18021, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡3, server: 18.166.29.105, port: 9149, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国3, server: 16.163.142.40, port: 22657, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
